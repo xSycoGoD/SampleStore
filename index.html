@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+    body {
+        font-style: italic;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        padding-top: 64px; /* Reserve space for fixed header */
+    }
+
+    .header {
+        background-color: #4CAF50;
+        color: white;
+        /* padding: 16px; removed to avoid extra height */
+        text-align: center;
+        font-weight: bold;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        height: 64px;
+        line-height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+        padding: 32px;
+        /* margin-top removed, handled by body padding-top */
+    }
+
+    .product {
+        background-color: white;
+        border-radius: 8px;
+        padding: 16px;
+        width: 220px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+    }
+
+    .buy-button {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 8px 16px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 120px;
+        transition: 0.75s;
+        border:none;
+        
+    }
+
+    .buy-button:hover {
+        background-color: #f5f8f5;
+        
+
+    }
+    .buy-button:active {
+        background-color: #45a049;
+        color: white;
+    }
+    .buy-button:focus {
+        outline: none;
+    }
+    .buy-button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+</style>    
+    
+</head>
+<body class="body">
+    <header class="header">
+        <label for="search">Search:</label>
+        <input type="search" id="search" placeholder="Search">
+
+    </header>
+
+    <main class="products">
+        <article class="product" data-name="Royal Black Rice">
+            <h2>Royal Black Rice</h2>
+            <img src="pictures/royal-black-rice.jpg" alt="Royal Black Rice">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Basmathi Rice">
+            <h2>Basmathi Rice</h2>
+            <img src="pictures/basmathirice.jpg" alt="Basmathi Rice">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Beetroot">
+            <h2>Beetroot</h2>
+            <img src="pictures/beetroot.jpg" alt="Beetroot">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Cabbage">
+            <h2>Cabbage</h2>
+            <img src="pictures/cabbage.jpg" alt="Cabbage">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Carrot">
+            <h2>Carrot</h2>
+            <img src="pictures/carrot.jpg" alt="Carrot">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Cauliflower">
+            <h2>Cauliflower</h2>
+            <img src="pictures/cauliflower.jpg" alt="Cauliflower">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Green Beans">
+            <h2>Green-Beans</h2>
+            <img src="pictures/green-beans-732x549-thumbnail.jpg" alt="Green Beans">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Peas">
+            <h2>Peas</h2>
+            <img src="pictures/images.jpg" alt="Peas">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Ladies Finger">
+            <h2>Ladies Finger</h2>
+            <img src="pictures/Lady-Finger-Okra-By-Door-Kisan5-570x464.jpg" alt="Lady's Finger">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Onion">
+            <h2>Onion</h2>
+            <img src="pictures/Onion.jpg" alt="Onion">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Potato">
+            <h2>Potato</h2>
+            <img src="pictures/Potato.jpg" alt="Potato">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+                
+            </a>
+        </article>
+
+        <article class="product" data-name="Tomato">
+            <h2>Tomato</h2>
+            <img src="pictures/tomatoseeds.jpg" alt="Tomato">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+
+        <article class="product" data-name="Spring Onion">
+            <h2>Spring-Onion</h2>
+            <img src="pictures/springonion.jpg" alt="Spring Onion">
+            <a href="error.html">
+                <button class="buy-button">Buy</button>
+            </a>
+        </article>
+    </main>
+
+
+
+    <script>
+    const searchInput = document.getElementById('search');
+    const products = document.querySelectorAll('.product');
+
+    searchInput.addEventListener('input', () => {
+        const filter = searchInput.value.toLowerCase();
+
+        products.forEach(product => {
+            const name = product.getAttribute('data-name').toLowerCase();
+            if (name.includes(filter)) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
